@@ -1,5 +1,11 @@
-<h1>Avatars</h1>
-<h1>Mostrando todos los avatars</h1>
-<% @avatars.each do |a| %>
- <%= image_tag "#{a.url_image}" %>
-<% end%>
+<main class="container">
+    <h1>Avatars</h1>
+    <h1>Mostrando todos los avatars</h1>
+  <div class="row text-center justify-content-center">
+    <div class="col">
+        <% @avatars.each do |a| %>
+        <%= image_tag "#{a.url_image}" %>
+       <% end%>
+    </div>
+  </div>
+</main>
